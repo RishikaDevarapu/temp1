@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+.border-radius{
+    border-radius: 10px;
+}
+form{
+    float:right;
+}
+form ul{
+    display: flex;
+    list-style: none;
+    float:right;
+}
+form ul li{
+    padding: 10px;
+}
+form ul li a{
+    color:#fff;
+    line-height: 50px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bg-carousel-soft-primary{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(191, 126, 34, 0.25))); 
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #df991f !important;
+    opacity: 1;
+}
+.carousel-indicators [data-bs-target].active {
+    background-color: #fccf52 !important;
+}
+.icon{
+    font-size: 60px;
+    color:whitesmoke;
+}
+a{
+    color:white !important;
+}
+.icon i:hover{
+    color:#ff944d !important;
+}
+.span1{
+    color:white;
+}
