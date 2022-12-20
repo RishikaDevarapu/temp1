@@ -39,8 +39,8 @@
     <main>
 
       <!-- navbar -->
-      <section class="py-3" style="background-color : rgba(255, 102, 0,.5);">
-        <div class="container" id="topNav">
+      <section class="np">
+        <div class="container" style="background-color : rgba(255, 102, 0,.5);" id="topNav">
           <div class="row justify-content-between">
             <div class="col-auto"><a class="navbar-brand" href="index.html"><img src="./assets/img/new/logo1.jpg" width="120" height="80" alt="logo" /></a></div>
             <div class="col-auto d-none d-lg-block">
@@ -49,14 +49,20 @@
                   <input class="form-control form-eduprixsearch-control rounded-pill" id="formGroupExampleInput" type="text" placeholder="Ex: Modern Art" /><img class="input-box-icon" src="assets/img/illustrations/search.png" width="36" alt="" />
                 </div>
                 <form>
-                  <div class="col-auto order-2 d-none d-sm-block">
-                    <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Courses</a></li>
-                      <li><a href="#">Instructors</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
+                  <div class="col-auto order-2 d-none d-sm-block navbar">
+                    <header>
+                      <input type="checkbox" id="click"> 
+                      <label for="click" class="menu-btn">
+                        <i class='bx bx-menu'></i>
+                      </label>
+                      <ul>  
+                          <li><a href="#banner">Home</a></li>
+                          <li><a href="#explore-courses">Courses</a></li>
+                          <li><a href="#courses">Services</a></li>
+                          <li><a href="#instructors">Instructors</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                      </ul>
+                  </header>
                   </div>
                 </form>
               </div>
@@ -66,7 +72,7 @@
       </section>
 
       <!-- icon background -->
-      <div class="py-7 py-sm-8 py-lg-10 py-xxl-9 py-xxl-11" style="background-color:#ff6600;"></div>
+      <div class="py-7 py-sm-8 py-lg-10 py-xxl-9 py-xxl-11 banner" id="banner" style="background-color:#ff6600;"></div>
       <section class="mb-n9 mb-lg-n11 p-0" style="transform: translateY(calc(-50% - 25px));">
         <div class="container-fluid">
           <div class="position-relative hero-carousel-container" id="heroCarouselContainer">
@@ -148,7 +154,7 @@
       </section> -->
 
        <!--explore courses-->
-       <section class="bg-secondary-1">
+       <section class="bg-secondary-1 explore-courses" id="explore-courses">
         <div class="container">
           <div class="row g-3">
             <h1 class="header-title-explore display-4 header text-start mb-5"> EXPLORE COURSES</h1>
@@ -260,8 +266,8 @@
         </div>
       </section>
 
-      <!--top courses-->
-      <section class="py-6">
+      <!--top courses--> 
+      <section class="py-6 courses" id="courses">
         <div class="container">
           <div class="row">
             <h1 class="header-title display-4 header text-start mb-5"> TOP COURSES</h1>
@@ -469,7 +475,7 @@
       </section>
 
       <!--instructors-->
-      <section>
+      <section class="instructors" id="instructors">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -641,7 +647,7 @@
       </section>
 
       <!--update-->
-      <section class="bg-soft-primary">
+      <section class="bg-soft-primary contact" id="contact">
         <div class="container">
           <div class="row flex-center">
             <div class="col-lg-5 col-xl-4"><img class="w-100 border-radius" src="./assets/img/new/update2.jpg" alt="..." /></div>
@@ -739,5 +745,4 @@
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Rubik:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   </body>
-
 </html>

@@ -40,9 +40,103 @@ form ul li a{
 a{
     color:white !important;
 }
+a:hover{
+    background:#cc5200 !important;
+    text-decoration: none;
+}
 .icon i:hover{
     color:#ff944d !important;
+    text-decoration: none !important;
 }
-.span1{
-    color:white;
+.navbar{
+    display: flex;
+    justify-content: space-between !important;
+    z-index:99;
+}
+.navbar a{
+    color:var(--text-color);
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    font-weight: 300;
+}
+.navbar .menu-btn i{
+    font-size: 40px;
+    cursor:pointer;
+    display: none;
+}
+.container{
+    max-width: 100%;
+}
+.container-fluid img{
+    position: relative;
+    top:0;
+}
+#click{
+    display: none;
+} 
+#topNav{
+    position: fixed;
+    z-index:999;
+    width: 100%;
+}
+section.np{
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+@media(max-width:1200px){
+    .container{
+        max-width: 100%;
+        
+    }
+    .navbar .menu-btn i{
+        display: block;
+    }
+    .container-fluid img{
+        top:40px;
+    }
+    .navbar ul{
+        position: fixed;
+        top:80px;
+        left:-100%;
+        background: #ff944d;
+        display: block;
+        height:80vh;
+        width:100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left:0%;
+    }
+    .navbar ul li a{
+        font-size: 30px;
+    }
+    .navbar ul li a:hover,
+    .navbar ul li a.active{
+        color: white;
+        background: #cc5200;
+    }
+
+}
+
+@media(max-width:850px){
+    .container-fluid img{
+        top:150px;
+    }
+}
+@media(max-width:660px){
+    .container-fluid img{
+        top:190px;
+    }
+}
+@media(max-width:500px){
+    .container-fluid img{
+        top:240px;
+    }
+    /* .carousel-item img{
+        width:400px;
+        height:80px;
+    } */
 }
